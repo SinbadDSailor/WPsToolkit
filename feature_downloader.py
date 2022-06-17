@@ -5,7 +5,7 @@ import urllib
 
 def feature():
 
-	urladd = input("Unesi URL: ")
+	urladd = input("Enter URL: ")
 	
 	url = requests.get(urladd)
 	soup = BeautifulSoup(url.content, 'html.parser')

@@ -2,7 +2,7 @@ from psd_tools import PSDImage
 
 def extract():
 
-    img_path = input("Putanju psd fajla: ")
+    img_path = input("Enter PSD file path: ")
     psd = PSDImage.open(img_path)
 
     for layer in psd.descendants():

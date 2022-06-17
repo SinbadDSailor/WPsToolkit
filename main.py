@@ -3,10 +3,10 @@ import psd_extractor
 
 
 def print_menu():
-    print("[*] Izaberi alat iz WPs Toolkit-a:")
-    print("[*] 1 - Skini slike ficera")
-    print("[*] 2 - Izvlacenje slika is PSD fajla")
-    print("[*] 3 - Izlaz")
+    print("[*] Choose tool from WPs Toolkit-a:")
+    print("[*] 1 - PDP feature downloader")
+    print("[*] 2 - PSD image extractor")
+    print("[*] 3 - Quit")
 
 def main():
 
@@ -23,7 +23,7 @@ def main():
 
     print_menu()
     while True:
-        user_choice = input("Unesi broj zeljenog menija: ")
+        user_choice = input("Enter tool id: ")
 
         if int(user_choice) == 1:
             feature_downloader.feature()
